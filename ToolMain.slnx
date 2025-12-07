@@ -1,3 +1,18 @@
 <Solution>
+  <Folder Name="/RDAExplorer/">
+    <Project Path="RDAExplorer/src/AnnoModificationManager4/AnnoModificationManager4.csproj" Id="579d60f0-65bd-4577-b3d2-a9c80b7d9baa" />
+    <Project Path="RDAExplorer/src/FileDBGenerator/FileDBGenerator.csproj" Id="6ca8bb38-4bfa-4289-96ed-9979203ddfdf" />
+    <Project Path="RDAExplorer/src/FileDBTool/FileDBTool.csproj" />
+    <Project Path="RDAExplorer/src/RDAExplorer/RDAExplorer.csproj" Id="f06f4391-e2ed-4c09-b671-d00871cc5f1d" />
+    <Project Path="RDAExplorer/src/RDAExplorerGUI/RDAExplorerGUI.csproj" Id="3b1a9a09-e799-467c-a5c9-8bdb9c7d6320" />
+  </Folder>
+  <Folder Name="/RDAExplorer/lib/">
+    <Project Path="RDAExplorer/lib/AnnoRDA/AnnoRDA.ChecksumDB/AnnoRDA.ChecksumDB.csproj" />
+    <Project Path="RDAExplorer/lib/AnnoRDA/AnnoRDA.FileDB/AnnoRDA.FileDB.csproj" />
+    <Project Path="RDAExplorer/lib/AnnoRDA/AnnoRDA.Tests/AnnoRDA.Tests.csproj" />
+    <Project Path="RDAExplorer/lib/AnnoRDA/AnnoRDA/AnnoRDA.csproj" />
+    <Project Path="RDAExplorer/lib/ManyConsole/ManyConsole.csproj" />
+    <Project Path="RDAExplorer/lib/NDesk.Options/NDesk.Options.csproj" />
+  </Folder>
   <Project Path="ToolMain/ToolMain.csproj" />
 </Solution>

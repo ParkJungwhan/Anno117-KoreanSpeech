@@ -8,4 +8,17 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="WindowsAPICodePack" Version="8.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RDAExplorer\src\RDAExplorer\RDAExplorer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Datas\" />
+  </ItemGroup>
+
 </Project>

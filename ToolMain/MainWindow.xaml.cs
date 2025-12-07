@@ -1,24 +1,41 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using CommunityToolkit.Mvvm.Messaging;
 
-namespace ToolMain
+namespace ToolMain;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
+        InitializeComponent();
+
+        WeakReferenceMessenger.Default.Register<ViewProcessChangedMessage>(this, (r, m) =>
         {
-            InitializeComponent();
-        }
+            // Handle the message here, with r being the recipient and m being the
+            // input message. Using the recipient passed as input makes it so that
+            // the lambda expression doesn't capture "this", improving performance.
+            switch (m.Value)
+            {
+                case eProcess.Path:
+                    root.Children.Clear();
+                    root.Children.Add(new PathView());
+                    break;
+
+                case eProcess.Script:
+                    root.Children.Clear();
+                    root.Children.Add(new ScriptSummaryView());
+                    break;
+
+                case eProcess.Packaging:
+                    root.Children.Clear();
+                    root.Children.Add(new PackagingView());
+                    break;
+            }
+        });
+
+        WeakReferenceMessenger.Default.Send(new ViewProcessChangedMessage(eProcess.Path));
     }
 }
