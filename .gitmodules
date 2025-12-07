@@ -1,0 +1,4 @@
+[submodule "RDAExplorer"]
+	path = RDAExplorer
+	url = https://github.com/lysanntranvouez/RDAExplorer.git
+	branch = rdaexplorer

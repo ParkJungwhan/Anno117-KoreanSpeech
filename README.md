@@ -16,6 +16,7 @@
 # License  
 - Using License 
   - RDAExplorer(GPL3.0): https://github.com/lysanntranvouez/RDAExplorer
-  - PD2Mods(WEM convert): https://github.com/Trinagan/PD2Mods
+  - PD2Mods: https://github.com/Trinagan/PD2Mods
    
 - (This Project) Licence: GPL 3.0
+  - 이 프로젝트롤 이용한 상업적 사용은 불가합니다.
