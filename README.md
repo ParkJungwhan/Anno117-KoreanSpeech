@@ -19,4 +19,8 @@
   - PD2Mods: https://github.com/Trinagan/PD2Mods
    
 - (This Project) Licence: GPL 3.0
-  - 이 프로젝트롤 이용한 상업적 사용은 불가합니다.
+  - 참조된 프로젝트의 라이선스로 인해, 이 프로젝트롤 이용한 상업적 사용은 불가합니다.
+
+# 프로젝트 중단
+- Wwise Studio를 통한 오디오 솔루션을 이용한 패키지로 인해 재패키지를 할려면 Wwise를 구입해서 진행해야하므로 여기서 중단함.
+- https://www.audiokinetic.com/ko/wwise/overview
